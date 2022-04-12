@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 1200px;
+            height: 1000px;
+            background-color:#fff;
+            margin: auto;
+            display: flex;
+        }
+        .child1{
+            height: 400px;
+            width:500px;
+            background-color: #fff;
+            margin: auto;
+            
+        }
+        .child2{
+            height: 400px;
+            width: 300px;
+            background-color:black;
+            margin: auto;
+            
+        }
+        .child1 > p{
+            text-align: left;
+        }
+        #caution{
+            color: red;
+            margin-top: 1px;
+        }
+        #caution + button{
+             color: slateblue;
+            background-color: #fff;
+        }
+        button:hover{
+            color: springgreen;
+        }
+        .child2{
+            color: white;
+            padding-left: 20px;
+            padding-top: 30px;
+
+        }
+        .child2 > div > p{
+            font-size: 24px;
+            margin: auto;
+        }
+        div>h1{
+            font-size: 40px;
+            font-weight: 10px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+            <div class="child1">
+                <p>NAME</p>
+                <input type="text">
+                <p>EMAIL</p>
+                <input type="text">
+                <p>MOBILE</p>
+                <input type="number">
+                <p id="caution">Entre a valid mobile</p>
+                <button>REGISTRATION</button>
+            </div>
+            <div class="child2">
+                <div>
+                    <p>NAME</p>
+                    <h1>MASAI </h1>
+                </div>
+               <div>
+                <p>EMAIL<p>
+                <p>Email@masaischool</p>
+               </div>
+                <div>
+                    <p>MOBILE</p>
+                    <p>1234567890</p>
+                </div>
+                
+            </div>
+    </div>
+</body>
+</html>
